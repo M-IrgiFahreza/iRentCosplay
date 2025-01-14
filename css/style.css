@@ -1,0 +1,213 @@
+/* Warna dasar */
+.warna1 {
+  background-color: #354649;
+}
+
+.warna2 {
+  background-color: #6c7a89;
+}
+
+.warna3 {
+  background-color: #a3c6c4;
+}
+
+.warna4 {
+  background-color: #e0e7e9;
+}
+
+/* Banner */
+.banner {
+  height: 80vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../image/banner.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 40%;
+}
+
+.banner h1 {
+  font-family: "Arial", sans-serif;
+  font-size: 3rem; /* Ukuran font lebih kecil untuk desktop */
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.banner h3 {
+  font-size: 1.5rem; /* Ukuran font lebih kecil untuk subheading */
+  font-weight: lighter;
+  color: #ffffff;
+  margin-top: 15px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.banner .input-group input {
+  border-radius: 20px;
+  padding-left: 10px;
+  font-size: 1.2rem;
+}
+
+.banner .input-group button {
+  border-radius: 20px;
+  background-color: #6c7a89;
+  font-size: 1.2rem;
+  padding: 12px 20px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.banner .input-group button:hover {
+  background-color: #354649;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 2rem; /* Perkecil ukuran untuk tablet */
+  }
+  .banner h3 {
+    font-size: 1.2rem; /* Perkecil subheading */
+  }
+}
+
+@media (max-width: 576px) {
+  .banner h1 {
+    font-size: 1.8rem; /* Ukuran font lebih kecil untuk mobile */
+  }
+  .banner h3 {
+    font-size: 1rem;
+  }
+}
+
+/* Highlighted Kategori */
+.highlighted-kategori {
+  height: 250px;
+}
+
+.kategori-baju-pria {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../image/baju-pria.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.kategori-baju-wanita {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../image/baju-wanita.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.kategori-topi {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../image/topi.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Gaya untuk tautan dalam kategori */
+.highlighted-kategori a.no-decoration {
+  color: white;
+  text-decoration: none;
+}
+
+/* Warna saat hover */
+.highlighted-kategori a.no-decoration:hover {
+  color: #a3c6c4;
+}
+
+/* Warna saat tautan dalam keadaan aktif atau diklik */
+.highlighted-kategori a.no-decoration:focus,
+.highlighted-kategori a.no-decoration:active {
+  color: white;
+}
+
+.text-harga {
+  font-size: 20px;
+  color: #a3c6c4;
+}
+
+.image-box {
+  height: 200px;
+}
+
+.image-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content-subscribe {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.banner-produk {
+  height: 45vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../image/banner.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 35%;
+}
+
+.list-group a {
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #f8f9fa;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 15px;
+}
+
+footer .container .footer-content {
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .container .footer-content {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Responsivitas */
+@media (max-width: 576px) {
+  .form-box {
+    padding: 30px;
+  }
+
+  .form-box h2 {
+    font-size: 22px;
+  }
+
+  .form-box input,
+  .form-box button {
+    font-size: 14px;
+  }
+}
